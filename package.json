@@ -1,5 +1,5 @@
 {
-  "name": "youtube-url-parser",
+  "name": "@fippli/youtube-url-parser",
   "version": "1.0.0",
   "description": "Parse youtube urls to embeddable urls",
   "main": "index.js",
