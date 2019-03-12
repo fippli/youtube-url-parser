@@ -1,2 +1,2 @@
-# youtube-url-parser
-Parse youtube urls to iframe urls
+# youtube url parser
+Parse youtube urls to embeddable urls
