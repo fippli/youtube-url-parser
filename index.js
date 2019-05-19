@@ -1,13 +1,18 @@
-/*
-Parse url strings for embedding youtube videos
-*/
+/** 
+ * Parse url strings for embedding youtube videos
+ */
 const getVideoId = (url) => {
-  const start = url.indexOf("watch?v=") + 8;
-  const end = url.indexOf("&");
-  if (end === -1) {
-    return url.substring(start);
+  try {
+    const start = url.indexOf("watch?v=") + 8;
+    const end = url.indexOf("&");
+    if (end === -1) {
+      return url.substring(start);
+    }
+    return url.substring(start, end);
+  } catch (error) {
+    console.error(error);
+    return null;
   }
-  return url.substring(start, end);
 }
 
 const getEmbeddableLink = (url) => {
